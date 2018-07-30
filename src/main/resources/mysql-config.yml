@@ -1,0 +1,21 @@
+#jdbcUrl: jdbc:mysql://101.236.50.10:3306/salesman_develop?useUnicode=true&failOverReadOnly=false
+jdbcUrl: jdbc:mysql://192.168.99.100:32770/mydb?useUnicode=true&failOverReadOnly=false&useSSL=false
+#username: laimi_develop
+#password: TSzIFJHThBBqwwwM
+username: root
+password: cdk123456
+autoCommit: false
+maximumPoolSize: 50
+minimumIdle: 10
+connectionTestQuery: SELECT 1
+dataSource:
+  cachePrepStmts: true
+  cacheResultSetMetadata: true
+  cacheServerConfiguration: true
+  elideSetAutoCommits: true
+  maintainTimeStats: false
+  prepStmtCacheSize: 250
+  prepStmtCacheSqlLimit: 2048
+  rewriteBatchedStatements: true
+  useLocalSessionState: true
+  useServerPrepStmts: true
