@@ -10,6 +10,8 @@ import kotlin.system.measureNanoTime
  */
 
 fun main(args: Array<String>) {
+
+
     val stockSelector = StockSelector()
     stockSelector.getStockHistoryData("600816")
 }
