@@ -40,7 +40,11 @@ class StockSelector {
 
     fun getStockHistoryData(code: String) {
         val stockDataHtml = this.soup("$stockHistoryUrl$code")
-        stockDataHtml.select("")
+        //数据行
+        val historyDataRows = stockDataHtml.select("table[class=data]").last().childNodes().first().childNodes()
+        //标题列数组
+        val headerLineList = historyDataRows.first().childNodes()
+        headerLineList.first().childNode(0).toString()
     }
 
 

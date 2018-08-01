@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad0fa46f-2e49-4a59-bd55-bc0058d02645" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilderRow.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/collectstock_main.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/collectstock_main.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/MainKt$coroutineInsert$1$doResume$$inlined$measureNanoTime$lambda$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/MainKt$coroutineInsert$1$doResume$$inlined$measureNanoTime$lambda$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/MainKt$coroutineInsert$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/MainKt$coroutineInsert$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/StockSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jillion/BatchInsertJillionData$execute$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jillion/BatchInsertJillionData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jillion/HikariPoolHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jillion/HikariPoolHolderKt$toLinkedProperties$$inlined$forEach$lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jillion/HikariPoolHolderKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/KeyType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/KeyType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/Qualifier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/Qualifier.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StockSelector.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StockSelector.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="310">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -114,8 +99,8 @@
       <file leaf-file-name="SqlBuilder.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilder.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="458">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="e#20#75#0" expanded="true" />
               </folding>
@@ -141,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDBCType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JDBCType.java" pinned="false" current-in-tab="false">
         <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/sql/JDBCType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="229">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="e#0#6361#0" expanded="true" />
               </folding>
@@ -606,13 +591,13 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/StockCodeSelector.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/StockSelector.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/stockdata/StockSelector.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/Qualifier.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilderOriginSql.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilderRow.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/KeyType.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilder.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt" />
       </list>
     </option>
   </component>
@@ -1156,12 +1141,12 @@
       <workItem from="1532922754741" duration="21000" />
       <workItem from="1532922796366" duration="19769000" />
       <workItem from="1533000759500" duration="5847000" />
-      <workItem from="1533106441778" duration="7965000" />
+      <workItem from="1533106441778" duration="8226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49521000" />
+    <option name="totallyTimeSpent" value="49782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1194,10 +1179,10 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19411123" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19411123" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32897604" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2235543" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13059701" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.24513096" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1632,13 +1617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/text/MessageFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15330">
@@ -1660,13 +1638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="2921" column="44" lean-forward="true" selection-start-line="2921" selection-start-column="44" selection-end-line="2921" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1681,23 +1652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilderRow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <element signature="e#20#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/sql/Types.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1344">
@@ -1705,13 +1659,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="2921" column="44" lean-forward="true" selection-start-line="2921" selection-start-column="44" selection-end-line="2921" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/DevEnv/Java/jdk1.8.0_131/src.zip!/java/sql/JDBCType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="229">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding>
             <element signature="e#0#6361#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#20#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/sqlbuilder/SqlBuilderRow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/business/stockdata/StockSelector.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
         </state>
       </provider>
     </entry>
