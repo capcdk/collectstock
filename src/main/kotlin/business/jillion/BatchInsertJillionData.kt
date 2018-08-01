@@ -1,4 +1,4 @@
-package jillion
+package business.jillion
 
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.runBlocking
@@ -17,7 +17,7 @@ class BatchInsertJillionData {
 
     private var sql = "INSERT INTO test_jillion_batch_insert (`str1`,`str2`,`time1`,`time2`,`int1`,`int2`) VALUES ( ? , ? , ? , ? , ? , ? )"
 
-    private val counter = AtomicInteger(0)
+    val counter = AtomicInteger(0)
     private val currTS = System.currentTimeMillis()
 
     fun execute(insertRows: Int) = runBlocking {
@@ -29,12 +29,12 @@ class BatchInsertJillionData {
         }
         ps.executeBatch().sum().let { counter.addAndGet(insertRows) }
         connection.commit()
-        delay(200)
+//        delay(200)
         connection.close()
         println("${Thread.currentThread().name} -- ${LocalTime.now()} -- 成功插入${counter.get()}条")
     }
 
-    suspend fun executeAsync(insertRows: Int) {
+    fun executeAsync(insertRows: Int) {
         val connection = HikariPoolHolder.getConnection()
         val ps = connection.prepareStatement(sql)
         for (i in 1..insertRows) {
@@ -43,7 +43,7 @@ class BatchInsertJillionData {
         }
         ps.executeBatch().sum().let { counter.addAndGet(insertRows) }
         connection.commit()
-        delay(200)
+//        delay(200)
         connection.close()
         println("${Thread.currentThread().name} -- ${LocalTime.now()} -- 成功插入${counter.get()}条")
     }
