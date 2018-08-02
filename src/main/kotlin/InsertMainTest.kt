@@ -1,31 +1,26 @@
 import business.jillion.BatchInsertJillionData
+import business.stockdata.StockSelector
 import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.launch
 import kotlinx.coroutines.experimental.runBlocking
-import business.stockdata.StockSelector
 import kotlin.system.measureNanoTime
 
 /**
  * Created by Chendk on 2018/7/20
  */
 
+
+
 fun main(args: Array<String>) {
 
-
-    val stockSelector = StockSelector()
-    stockSelector.getStockHistoryData("600816")
+    val measureList = mutableListOf<Long>()
+    repeat(10) {
+//        measureList += singleThreadInsert(100, 10000)
+        measureList += coroutineInsert(10000,10)
+    }
+    println(measureList)
+    println("平均耗时 ：${measureList.average()} 毫秒")
 }
-
-//fun main(args: Array<String>) {
-//
-//    val measureList = mutableListOf<Long>()
-//    repeat(10) {
-////        measureList += singleThreadInsert(100, 10000)
-//        measureList += coroutineInsert(10000,10)
-//    }
-//    println(measureList)
-//    println("平均耗时 ：${measureList.average()} 毫秒")
-//}
 
 fun singleThreadInsert(missionCount: Int, rowsPerMission: Int): Long {
     val testInsert = BatchInsertJillionData()

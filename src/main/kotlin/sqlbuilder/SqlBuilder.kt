@@ -22,12 +22,18 @@ class SqlBuilder {
         rowList += SqlBuilderRow.ID_KEY.build(tableId)
     }
 
-    fun addCommonRow(rowName: String, jdbcType: JDBCType, dataSize: Int, qualifier: Array<Qualifier>) {
+    fun addCommonRow(rowName: String, jdbcType: JDBCType, dataSize: Int, qualifier: List<Qualifier> = emptyList()): SqlBuilder {
         rowList += SqlBuilderRow.COMMON_ROW.build(rowName, jdbcType.name, dataSize.toString(), qualifier.joinToString(" "))
+        return this
     }
 
-    fun addCommonKey(rowName: String, keyName: String, keyType: KeyType) {
+    fun addCommonKey(rowName: String, keyName: String, keyType: KeyType): SqlBuilder {
         rowList += SqlBuilderRow.COMMON_KEY.build(keyName, rowName, keyType.type)
+        return this
+    }
+
+    fun build(tableName: String): String {
+        return MessageFormat.format(DDL_CREATE_TABLE_ORIGIN, tableName, rowList.sortedBy { it.rowType }.joinToString(",") { it.rowSql })
     }
 
     companion object {
@@ -37,7 +43,10 @@ class SqlBuilder {
         val DEFAULT_ID_ROW = SqlBuilderRow.ID_ROW.build("id")
         val DEFAULT_ID_KEY = SqlBuilderRow.ID_KEY.build("id")
 
-        private fun SqlBuilderRow.build(vararg args: String) = this.let { TableRow(MessageFormat.format(it.originSql, args), it) }
+        private fun SqlBuilderRow.build(vararg args: String) =
+                this.let {
+                    TableRow(MessageFormat.format(it.originSql, *args), it)
+                }
 
     }
 
