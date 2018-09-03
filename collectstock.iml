@@ -17,33 +17,227 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.10/85fe1811f3e586d0cc53aba1394d8089f1862215/kotlin-stdlib-jdk8-1.2.10.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.30/f916048adc012c9342b796a5f84c0ac6205abcac/kotlin-stdlib-jdk8-1.2.30.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.10/a60ae1f6c488843a5159e3ca7c3bea0d51fd01d3/kotlin-stdlib-jdk8-1.2.10-sources.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.30/3a00be60f8d3eb8dfe0bedd9a174cf2948138287/kotlin-stdlib-jdk8-1.2.30-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.10/cfe8b616b3bf0811ef70863c86b745a2e767a66e/kotlin-stdlib-jdk7-1.2.10.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/net.dongliu/requests/4.14.1/82900c472bc3c7d0e656b869044d431837c67904/requests-4.14.1.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.10/74bf699baf4194f2f7528e1a850bc4f207bc6085/kotlin-stdlib-jdk7-1.2.10-sources.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/net.dongliu/requests/4.14.1/ddc373f9e16a6f686eb5773991c989073bc0a07a/requests-4.14.1-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.10/b9bf650516989595a5390e5a54181e16347208ac/kotlin-stdlib-1.2.10.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jsoup/jsoup/1.11.2/e3eeb8a0b4ce1db246059a41e353cd7413dad226/jsoup-1.11.2.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.10/c0f90f56ebb568fe5fa4001ee1941b27cb8a2e1f/kotlin-stdlib-1.2.10-sources.jar!/"/>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jsoup/jsoup/1.11.2/f0f1f0d1ceb2cd515c98649d9ad6b8b9814899b2/jsoup-1.11.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.24.0/6c950c4d6e7ab7ba80ed14b82303fdd8d678f2ec/kotlinx-coroutines-core-0.24.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.24.0/146a899e29fc9fb32374b22d039e38a1a6b76e8c/kotlinx-coroutines-core-0.24.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.11/2c3d25fe1dfdd6496e0bbe47d67809f67487cfba/mysql-connector-java-8.0.11.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.11/c790841f886ed40601887d1dbce55db8687321f4/mysql-connector-java-8.0.11-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.7/557edd918fd41f9260963583ebf5a61a43a6b423/commons-lang3-3.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.7/e7e36219edde1c66c93495a75490d8f526c377cb/commons-lang3-3.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/hikari-cp/hikari-cp/2.6.0/fe548aed8490a1b7bb65ba7b0e670430d217a891/hikari-cp-2.6.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.9.6/2cf807d8a1a6a52e80a269e73b2fd8c0df06a42b/jackson-dataformat-yaml-2.9.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.9.6/5c42b295ee6276699a295239f107da084faec5ae/jackson-dataformat-yaml-2.9.6-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.6/cfa4f316351a91bfd95cb0644c6a2c95f52db1fc/jackson-databind-2.9.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.6/dad3a9fbbedf8781dfd138539cd82638ebad5678/jackson-databind-2.9.6-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.30/ca12c47fc1e3a7316067b2a51e2f214745ebf8c5/kotlin-stdlib-jdk7-1.2.30.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.30/49e090644e085340bb9afc7d554b2df8394bb36c/kotlin-stdlib-jdk7-1.2.30-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/fa8127e505bff50fec291d0dd619d1bda5c619e0/kotlin-stdlib-1.2.51.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/649a609725b857dd285cf69d49d4f1f77335076e/kotlin-stdlib-1.2.51-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/0.24.0/e3b343c9dd0bca3ca063514d8ce3d7c31b977c17/kotlinx-coroutines-core-common-0.24.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/0.24.0/263536140bbb1433d243d7508a828e3374589ea1/kotlinx-coroutines-core-common-0.24.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.6.0/88ba32feefe385d5dc284b71f649201eabd15778/protobuf-java-2.6.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.6.0/194303f1352442121424c408d9affa2c352a9437/protobuf-java-2.6.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.tobereplaced/lettercase/1.0.0/6ae6d535188699ce6f0871f89044585d07bc566f/lettercase-1.0.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/clojure/1.9.0/9ee19f88152373323b8af7be35de5aa6c0c4b2b/clojure-1.9.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/clojure/1.9.0/81d88439cbe00268ca07f1b91dcf8ce660856afe/clojure-1.9.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.2.0/6c66db1c636ee90beb4c65fe34abd8ba9396bca6/HikariCP-3.2.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.2.0/214ae6e5db95b776e38493ca5808e3a7c4a574e8/HikariCP-3.2.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.18/e4a441249ade301985cb8d009d4e4a72b85bf68e/snakeyaml-1.18.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.18/17af1c263c33176842715cbfa677e14a5ad862dd/snakeyaml-1.18-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.6/4e393793c37c77e042ccc7be5a914ae39251b365/jackson-core-2.9.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.6/297b561cc2ca89e07bf4cb6445c08260b524aa4d/jackson-core-2.9.6-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/a0ad4e203304ccab7e01266fa814115850edb8a9/jackson-annotations-2.9.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.0/849d71c4db7c6ecb44d848d4b4bf0f24d2688443/atomicfu-common-0.11.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.0/db37914253f82f1b366d2560ad7e5cd66061897d/atomicfu-common-0.11.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.51/e4a9d4b13ab19ed1e6531fce6df98e8cfa7f7301/kotlin-stdlib-common-1.2.51.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.51/e8c91083a5863d94fdc2836459e7e7a555774be9/kotlin-stdlib-common-1.2.51-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
@@ -55,6 +249,39 @@
         <JAVADOC/>
         <SOURCES>
           <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/spec.alpha/0.1.143/54057fc4330a7b439127effafa92d1bfeefc23f5/spec.alpha-0.1.143.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/spec.alpha/0.1.143/1064c5e73c9575f200f33b2191a6635e51c46bd3/spec.alpha-0.1.143-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/core.specs.alpha/0.1.24/2637e33f693f51267f04e63f2acfb5d182e7bf56/core.specs.alpha-0.1.24.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.clojure/core.specs.alpha/0.1.24/f33584b8ca0cb865cb70068cd9301952e423bdc6/core.specs.alpha-0.1.24-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://D:/gradle-4.9/repo/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>

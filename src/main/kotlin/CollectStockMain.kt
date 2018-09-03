@@ -1,42 +1,48 @@
 import business.jillion.HikariPoolHolder
-import business.stockdata.StockSelector
-import kotlinx.coroutines.experimental.Job
-import kotlinx.coroutines.experimental.joinAll
+import business.stockdata.StockSelectorImp1
+import kotlinx.coroutines.experimental.asCoroutineDispatcher
 import kotlinx.coroutines.experimental.launch
 import kotlinx.coroutines.experimental.runBlocking
 import sqlbuilder.SqlBuilder
 import java.sql.JDBCType
 import java.time.LocalDate
+import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicLong
+import kotlin.system.measureNanoTime
 
 /**
  * Created by Chendk on 2018/8/2
  */
-fun main(args: Array<String>) = runBlocking<Unit> {
+fun main(args: Array<String>) = runBlocking {
 
-    val stockSelector = StockSelector()
+    measureNanoTime {
+        val stockSelector = StockSelectorImp1()
 
-    //获取股票编码、数据标题
-    val stockCodeList = stockSelector.getStockCodes()
-    val rowNameList = stockSelector.getStockHeaders()
+        //获取股票编码、数据标题
+        val stockCodeList = stockSelector.getStockCodes()
+        val rowNameList = stockSelector.getStockHeaders()
 
-    //建表
-    val tableName = createDb(rowNameList)
+        //建表
+        val tableName = createDb(rowNameList)
 
-    val insertCounter = AtomicLong(0)
+        val insertCounter = AtomicLong(0)
 
-    val jobList = mutableListOf<Job>()
-    stockCodeList.forEach {
-        jobList += launch {
-            val stockData = stockSelector.getStockHistoryData(it)
-            insertData(tableName, rowNameList, stockData).let {
-                println("${Thread.currentThread().name} -- 插入${it}行")
-                insertCounter.addAndGet(it.toLong())
+        val mainJob = launch {
+            stockCodeList.forEach {
+                launch(Executors.newFixedThreadPool(4).asCoroutineDispatcher()) {
+                    val stockData = stockSelector.getStockHistoryData(it)
+                    insertData(tableName, rowNameList, stockData).let {
+                        println("${Thread.currentThread().name} -- 插入${it}行")
+                        insertCounter.addAndGet(it.toLong())
+                    }
+                }
             }
+            println("任务启动循环完成")
         }
+        mainJob.join()
+    }.let {
+        println("总耗时：${it / (1000 * 1000 * 1000)}s")
     }
-    println("任务启动循环完成")
-    jobList.joinAll()
 }
 
 fun createDb(rowNameList: List<String>): String {
