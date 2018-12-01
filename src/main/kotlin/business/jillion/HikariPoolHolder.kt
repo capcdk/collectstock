@@ -24,8 +24,6 @@ object HikariPoolHolder {
         }
         val yamlFactory = YAMLFactory()
         val dbNode = mapper.readTree<JsonNode>(yamlFactory.createParser(ClassLoader.getSystemClassLoader().getResource(src)))
-//        val treeTraversingParser = TreeTraversingParser(dbNode)
-//        val dbProperties = mapper.readValue(treeTraversingParser, Properties::class.java)
         val config = HikariConfig(dbNode.toLinkedProperties())
         config.isAutoCommit = false
         config.addDataSourceProperty("rewriteBatchedStatements", "true")

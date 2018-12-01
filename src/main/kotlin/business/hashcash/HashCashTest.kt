@@ -20,13 +20,13 @@ import kotlin.system.measureNanoTime
 @ExperimentalCoroutinesApi
 fun main(args: Array<String>) = runBlocking {
     slowHashGroup().consumeEach {
-//        insertData(it)
+        insertData(it)
     }
 }
 
 @ExperimentalCoroutinesApi
 fun CoroutineScope.slowHashGroup() = produce {
-    var times = 2000000
+    var times = 20000
     val group = 5
     while (times <= 5000000) {
         val tripleList = (1..group).map {
@@ -59,7 +59,7 @@ fun insertData(questionResultList: List<Triple<String, String, String>>) {
         questionResultList.forEach { pair ->
             ps.setString(1, pair.first)
             ps.setString(2, pair.second)
-            ps.setString(2, pair.third)
+            ps.setString(3, pair.third)
             ps.addBatch()
         }
         ps.executeBatch()
