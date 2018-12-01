@@ -1,19 +1,30 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.channels.consumeEach
-import kotlinx.coroutines.experimental.channels.produce
-import kotlinx.coroutines.experimental.runBlocking
-
 /**
  * Created by Chendk on 2018/7/27
  */
 
-fun produceSquares() = produce {
-    for (x in 1..5) send(x * x)
+fun main(args: Array<String>) {
+    People.Factory("yellow").run {
+        this.say()
+    }
 }
 
-fun main(args: Array<String>) = runBlocking {
-    val squares = produceSquares()
-    squares.consumeEach { println(it) }
-    println("Done!")
+class People private constructor(val alert: String) {
+
+    fun say() {
+        println(alert)
+    }
+
+    companion object Factory {
+        operator fun invoke(color: String): People {
+            return when (color.toLowerCase().trim()) {
+                "black" -> People("What's up! man")
+                "yellow" -> People("你嘎哈")
+                "white" -> People("hello,I'm stupid")
+                else -> People("")
+            }
+        }
+    }
 }
+

@@ -1,8 +1,8 @@
 import business.jillion.HikariPoolHolder
 import business.stockdata.StockSelectorImp1
-import kotlinx.coroutines.experimental.asCoroutineDispatcher
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.asCoroutineDispatcher
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import sqlbuilder.SqlBuilder
 import java.sql.JDBCType
 import java.time.LocalDate

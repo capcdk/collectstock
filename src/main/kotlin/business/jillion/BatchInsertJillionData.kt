@@ -1,7 +1,6 @@
 package business.jillion
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.runBlocking
 import org.apache.commons.lang3.RandomStringUtils
 import org.apache.commons.lang3.RandomUtils
 import java.sql.PreparedStatement

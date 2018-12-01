@@ -1,10 +1,9 @@
 package business.stockdata
 
-import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.delay
 import org.apache.commons.lang3.RandomUtils
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import java.util.concurrent.TimeUnit
 
 /**
  * Created by Chendk on 2018/8/3
@@ -28,11 +27,11 @@ object SingletonJsoup {
     /**
      * 利用指定的Header链接到URL ,并拉取资源
      */
-    fun soup(url: String, host: String): Document {
+    fun soup(url: String, host: String, headers: Map<String, String>? = null): Document {
 
         return Jsoup.connect(url)
                 .userAgent(userAgentList[RandomUtils.nextInt(0, userAgentList.size - 1)])
-                .headers(mapOf(
+                .headers(mutableMapOf(
                         "Host" to host,
                         "Accept" to "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
                         "Accept-Encoding" to "gzip, deflate",
@@ -40,7 +39,9 @@ object SingletonJsoup {
                         "Cache-Control" to "max-age=0",
                         "Connection" to "keep-alive",
                         "Upgrade-Insecure-Requests" to "1"
-                )).get()
+                ).apply {
+                    headers?.let { this.putAll(it) }
+                }).get()
     }
 
     /**
@@ -49,7 +50,7 @@ object SingletonJsoup {
     suspend fun randomDelaySoup(url: String, host: String): Document {
 
         while ((lastRequestTimestamp + (currentDelay * 1000 * 1000)) > System.nanoTime()) {
-            delay((lastRequestTimestamp + (currentDelay * 1000 * 1000)) - System.nanoTime(), TimeUnit.NANOSECONDS)
+            delay(((lastRequestTimestamp + (currentDelay * 1000 * 1000)) - System.nanoTime()) / (1000 * 1000))
         }
         //到达延迟，更新当前延迟（300ms~2s 随机）
         lastRequestTimestamp = System.nanoTime()
