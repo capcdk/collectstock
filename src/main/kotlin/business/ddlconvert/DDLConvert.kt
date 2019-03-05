@@ -11,13 +11,13 @@ import java.util.*
  */
 
 fun main(args: Array<String>) {
-    val schema = "laimi_er"
-    findFieldTypes(schema)
-    buildTableEntities(schema)
+    val schema = "laimi_lite_er"
+//    findFieldTypes(schema)
+    buildTableEntities(schema, "t_cs_platform_order", "t_cs_platform_order_detail")
 }
 
-fun buildTableEntities(schema: String): List<DBTable> {
-    val dbTables = listTables(schema)
+fun buildTableEntities(schema: String, vararg tables: String): List<DBTable> {
+    val dbTables = listTables(schema, *tables)
     dbTables.forEach {
         it.fields = listTableFields(schema, it.title)
         it.indexs = listTableIndexs(it.title)
@@ -52,22 +52,23 @@ private fun listFieldTypes(schema: String): HashSet<String> {
     }
 }
 
-private fun listTables(schema: String): List<DBTable> {
+private fun listTables(schema: String, vararg tables: String): List<DBTable> {
     return HikariPoolHolder.getConnection().use {
-        val tables = LinkedList<DBTable>()
+        val tableResults = LinkedList<DBTable>()
         val ps = it.prepareStatement("""
             select *
             from information_schema.tables
             where table_schema = '$schema'
+            ${if (tables.isNotEmpty()) "and `table_name` IN (${tables.joinToString { table -> "'$table'" }})" else ""}
         """.trimIndent())
         val resultSet = ps.executeQuery()
         while (resultSet.next()) {
             val tableComment = resultSet.getString("TABLE_COMMENT")
             val tableName = resultSet.getString("TABLE_NAME")
             val schemaName = resultSet.getString("TABLE_SCHEMA")
-            tables.add(DBTable(tableName, remark = tableComment, schema = schemaName))
+            tableResults.add(DBTable(tableName, remark = tableComment, schema = schemaName))
         }
-        tables
+        tableResults
     }
 }
 

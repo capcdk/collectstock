@@ -1,49 +1,16 @@
-/**
- * Created by Chendk on 2018/10/10
- */
-public class Test {
+import java.util.HashMap;
 
-    static final ThreadLocal<String> localA = new ThreadLocal<>();
-    ThreadLocal<String> localB = new ThreadLocal<>();
-
+class Solution {
     public static void main(String[] args) {
-        TestTA testTA = new TestTA();
-        testTA.suspend();
-    }
-
-    static class TestTA extends Thread {
-        @Override
-        public void run() {
-            localA.set("a");
-
-            System.out.println("started");
-            synchronized (localA) {
-                System.out.println("entered");
-                try {
-                    localA.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        String lock1 = "lock1";
+        String lock2 = "lock2";
+        Runnable t1 = () -> {
+            synchronized (lock1){
+                System.out.println("t1 got lock1");
+                synchronized (lock2){
+                    System.out.println("t1 got lock2");
                 }
             }
-        }
+        };
     }
-
-    class TestTB extends Thread {
-        @Override
-        public void run() {
-            localA.set("a");
-
-            System.out.println("started");
-            synchronized (localA) {
-                System.out.println("entered");
-                try {
-                    localA.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
-
 }
-

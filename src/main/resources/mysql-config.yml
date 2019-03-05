@@ -1,6 +1,6 @@
-jdbcUrl: jdbc:mysql://114.215.28.111:28743/laimi?useUnicode=true&characterEncoding=UTF-8&failOverReadOnly=false&useSSL=false
-username: laimi_read
-password: 7GSdadjf7s9x
+jdbcUrl: jdbc:mysql://192.168.99.100:32770/act_mongo?useUnicode=true&characterEncoding=UTF-8&failOverReadOnly=false&useSSL=false
+username: root
+password: cdk123456
 autoCommit: false
 maximumPoolSize: 50
 minimumIdle: 10

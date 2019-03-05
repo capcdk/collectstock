@@ -13,8 +13,14 @@ fun main(args: Array<String>) {
     }
 }
 
-fun String.toUpperCamel(): String {
-    val chars = this.toMutableList()
+fun String.toUpperCamel(removePrefix: String? = null): String {
+    val input =
+            if (removePrefix != null)
+                this.removePrefix(removePrefix)
+            else
+                this
+
+    val chars = input.toMutableList()
     var temp = 0
     (0 until chars.size).forEach {
         val i = it - temp
